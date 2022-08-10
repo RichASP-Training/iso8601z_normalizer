@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.litesoft</groupId>
 	<artifactId>iso8601znormalizer</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>utilTimeStampISO8601zNormalizer</name>
