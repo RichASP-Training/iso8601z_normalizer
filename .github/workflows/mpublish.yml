@@ -18,7 +18,6 @@ jobs:
           distribution: 'temurin' # OpenJDK via Eclipse Temurin
           java-version: '17'
       - name: Publish package
-        # run: ./mvnw -X -e -DskipTests -Dmaven.wagon.http.pool=false clean deploy
-        run: mvn deploy -X -Dgithub.username=${{ github.actor }} -Dgithub.password=${{ secrets.GITHUB_TOKEN }}
+        run: ./mvnw -X -ntp -DskipTests --batch-mode deploy -Dusername=$GITHUB_TOKEN
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
